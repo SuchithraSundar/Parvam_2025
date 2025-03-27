@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <h1>This keyword</h1>
+    <ol>
+        <li>This keyword will points to the current object</li>
+        <li>this keyword always used in object</li>
+        <li>when this keyword used within declaration or normal function it  will give current obj as output</li>
+        <li>when this keyword used within arrow function it  will give window function as output</li>
+    </ol>
+    <p></p>
+
+    <script>
+       // console.log(this);//it will give window function as output
+       //fun1:
+        // const obj1 = {
+        //     firstname :"Suchithra",
+        //     lastname :"Sundar",
+        //     age :23,
+        //     about : function(){
+        //         console.log(this);
+        //     }
+        // }
+        // obj1.about();//it will  give current object keys and values,in this case it is obj1
+
+        // //fun2:
+        // const obj2 = {
+        //     firstname :"Suchithra",
+        //     lastname :"Sundar",
+        //     age :23,
+        //     about : () =>{
+        //         console.log(this);
+        //     }
+        // }
+        // obj2.about();//it will give window function as output  
+        
+        //practice : to display only the firstname and lastname
+        const obj1 = {
+            firstname :"Suchithra",
+            lastname :"Sundar",
+            age :23,
+            about : function(){
+                console.log(this.firstname +" " +this.lastname);
+            }
+            
+        }
+        obj1.about();
+
+
+    </script>
+</body>
+</html>

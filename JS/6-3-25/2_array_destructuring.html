@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+<body>
+    <h1>Array Destructuring</h1>
+    <p> Array Destructuring is used to spliitting the values...we mainly use ...rest operator to spread the vlaues  </p>
+    <script>
+        // //Destructuring array
+        // let array1 =["item1", "item2", "item3", "item4"];
+        // console.log(array1);
+        // let var1 =array1[0];
+        // let var2 =array1[1];
+        // let var3 =array1[2];
+        // let var4 =array1[3];//bad practice ddisplay each items of arrray so we use Array Destructuring
+
+        // let array2 =["item1", "item2"];
+        // const [var5,var6] = array2;
+        // console.log("array1: ",var5,var6);//here we only get two value for two variable..but if we have more than two items then we cant get all the items for two variables so we use rest operator(...rest)
+ 
+        // let array3 =["item1", "item2", "item3", "item4","item5","item6", "item7","item8"];
+        // const [var7,var8, ...rest] = array3;//....rest is spread operator
+        // console.log("array: ",var7, var8,);
+        // console.log("rest :",rest);
+
+    </script>
+
+    <script>
+       //Destructuring object
+       const users =[
+            {firstname :"Suchithra1", age:23, address:"Hassan"},
+            {firstname :"Suchithra2", age:23, address:"Hassan"},
+            {firstname :"Suchithra3", age:23, address:"Hassan"},
+        ]
+        // const [user1, user2, user3] = users;//it destructres the objects in the form of array,so to destructre the object we use {} inside array[]
+        const [{firstname}, user2, user3] = users;//here we can get particularly required object value using{}
+        console.log(firstname);
+        console.log(user2);
+        console.log(user3);
+    </script>
+
+</body>
+</html>

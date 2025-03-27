@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Fetch Example</title>
+</head>
+<body>
+    <h1>Fetch Example</h1>
+    <div id="divtag"></div>
+    <script>
+        const url ="https://jsonplaceholder.typicode.com/posts";
+        const getUsers = async (url) =>{
+            const res = await fetch(url);
+            console.log(res);
+            const jsonRes = await res.json();
+            console.log(jsonRes);
+            jsonRes.forEach((curEle) =>{
+                console.log(curEle);
+                document.getElementById("divtag").innerHTML += `<p>${curEle.title}</p>`
+            });
+        }
+        getUsers(url);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Functions</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="HandleClicks()">Click Me</button>
+
+    <script>
+        //Display Functions
+            //1.inner HTML
+            //2.inner text
+            //3.console.log
+            //4.document.write
+            //5.window.alert
+            //6.window.print
+
+        //1.inner HTML:it insert tag inside  another tag
+            function HandleClicks(){
+                document.getElementById('demo').innerHTML='<span>Hello...! this is Inner HTML</span>';  
+            }
+
+        //2.inner text:treat all element as text only
+            // function HandleClicks(){
+            //     document.getElementById('demo').innerText='<span>Hello...! this is Inner HTML</span>';  
+            // }
+
+        //3.console.log: works as printf funtion
+            // function HandleClicks(){
+            //     console.log("User Clicked the button");  
+            // }
+
+        //4.document.write:erase all the existing code and create new document
+            // function HandleClicks(){
+            //     document.write("User Clicked the button");  
+            // }
+
+        //5.window.alert:to show alert msg to user
+            // function HandleClicks(){
+            //     window.alert("User Clicked the button");  
+            // } 
+        
+        //6.window.print:to take the print of document
+            // function HandleClicks(){
+            //     window.print("User Clicked the button");  
+            // } 
+        
+
+    </script>
+
+</body>
+</html>

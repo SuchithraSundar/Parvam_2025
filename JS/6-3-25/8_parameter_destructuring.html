@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Destructuring</title>
+</head>
+<body>
+    <h1>Parameter Destructuring</h1>
+
+    <script>
+        const display = function ({address}){
+            console.log(address);
+        }
+        // display(20);
+        // display("Suchithra");
+        // display([1,2,3,4,5]);
+        display({ firstname : "rishon",age : 25,gender : "male",address : "banglore"});
+    </script>
+</body>
+</html>

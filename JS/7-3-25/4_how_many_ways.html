@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How many ways</title>
+    <!-- 1. it is not recommended as it stop loading html when it encounter js code  -->
+    <!-- <script src="./first.js"></script> -->
+
+    <!-- 3. it is also not recommended as it stop parsing html when it encounter js script -->
+    <!-- <script src="./first.js" async></script> -->
+
+    <!-- 4. it is recommended as it allow to parse both html and script simultaneously -->
+    <script src="./first.js" defer></script>
+    <style>
+        h1{
+            color:darkblue;
+            background-color:chartreuse !important;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="color: brown; background-color: antiquewhite;">How many ways we can use external JS</h1>
+    <ol>
+        <li>inside head</li>
+        <li>inside above the closing body tag</li>
+        <li>using async inside head</li>
+        <li>using defer inside head</li>
+    </ol>
+
+    <!-- 2.  it is recommended but it will take time to load html content -->
+    <script src="./first.js"></script>
+</body>
+</html>

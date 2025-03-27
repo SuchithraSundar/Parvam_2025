@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <p> we can access the properties of object by  using .operator and [] operator </p>
+    <p>function inside class is refer to method().</p>
+    <p>function outside class is refer to function().</p>
+
+    <script>
+        const car_obj ={
+            carName: "tesla",
+            Type : "EV",
+            wheels: 4,
+            fourseat:true,
+            "four seat":true,//calling using []
+            speed: function(){
+                console.log("Tesla is moving in 70km/h");//calling 
+            }
+        } 
+        console.log(car_obj); 
+        console.log(car_obj.carName);
+        console.log(car_obj.wheels);
+        car_obj.speed();
+        console.log(car_obj["four seat"]);
+
+        // adding  item to objects
+        car_obj.color =  "blue";
+        console.log(car_obj);
+
+        const new_obj ={ ...car_obj};
+        console.log(" Car object: ",new_obj);
+
+        //delete item from objects
+        delete car_obj.color;
+        console.log("After Car object: ",car_obj);
+
+    </script>
+</body>
+</html>

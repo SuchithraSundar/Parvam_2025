@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting multiple elements</title>
+</head>
+<body>
+    <h1>Selecting multiple elements </h1>
+    <p>1. getElementsByClassName -  we cannot use forEach loop here (HTML collection)</p>
+    <p>2. querySelector - we can use forEach loop here(NodeList)</p>
+
+    <div class="child">lorem1</div>
+    <div class="child">lorem2</div>
+    <div class="child">lorem3</div>
+
+    <div class="childs">lorem1</div>
+    <div class="childs">lorem2</div>
+    <div class="childs">lorem3</div>
+
+    <script>
+        //1. using getElementsByClassName
+            console.log("using getElementsByClassName");
+            const res = document.getElementsByClassName("child");
+            console.log(res);//it will give HTML COLLECTION as output,so to get single elements we use for of loop,but we can't able to use forEach loop for HTML collection
+            //console.log("res");//to display all elements of res
+            for (let i of res){// to apply style to each element of i
+                console.log(i);
+                i.style.color = "red";
+                i.style.fontSize = "30px";
+            }
+
+            // res.forEach((curEle) =>{//it is not working for htmlCollection
+            //     console.log(curEle);
+            // })
+
+        //2. using querySelector
+            console.log("using querySelector");
+            const res1 = document.querySelectorAll(".childs");//it will give NodeList as output.so we can use forEach loop here
+            console.log(res1);
+            res1.forEach((curEle) =>{
+                //console.log(curEle);//displays all current elements
+                curEle.style.backgroundColor = "bisque";
+            })
+
+
+    </script>
+</body>
+</html>

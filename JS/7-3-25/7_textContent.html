@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Content</title>
+</head>
+<body>
+    <h1>Text Content</h1>
+    <p class="ptag">Lorem ipsum<span style="display: none;">adipisicing elit. </span> 
+        perspiciatis
+    </p>
+    <script>
+        const ptag = document.querySelector(".ptag");
+        //console.log(ptag);
+        console.log(ptag.innerText);//in this case of innerText it will not show  the content that are hidden in HTML
+        console.log(ptag.textContent);//in this case of textContent it will show  the content even that are hidden in HTML
+        // ptag.innerText = "hello";
+        // ptag.textContent = "Hello";
+    </script>
+</body>
+</html>

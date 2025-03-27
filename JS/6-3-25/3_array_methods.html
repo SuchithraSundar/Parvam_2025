@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+
+    <p>1. foreach - Iterates over each element in an array.</p>
+    <p>2. map - Creates a new array by applying a function to each element.</p>
+    <p>3. filter - Returns a new array containing only elements that pass a condition</p>
+    <p>4. reduce - Reduces an array to a single value.</p>
+    <p>5. sort - Sorts elements in place </p>
+    <p>6. splice(start,delete,insert) - Adds/removes elements at a specific index.</p>
+    <p>7. every - </p>
+    <p>8. some - Checks if at least one element satisfies a condition.</p>
+
+    <script>
+        const array1 =[1, 2, 3, 4, 5, 6];
+
+        // //1 .foreach : traverse each element of array and perform specified operation on same array
+        //     array1.forEach((curEle, index, array) => {
+        //         console.log(curEle * curEle, "index is :",index , "array is : ",array);
+        //     })
+
+            
+
+        //     //real time use 
+        //     const users =[
+        //         {firstname :"Suchithra1", age:23, address:"Hassan"},
+        //         {firstname :"Suchithra2", age:23, address:"Hassan"},
+        //         {firstname :"Suchithra3", age:23, address:"Hassan"}
+        //      ]
+        //      users.forEach((curEle) =>{
+        //         console.log(curEle.firstname);
+        //         // console.log(curEle.address);
+        //      }) 
+
+        // //2. map : simmilar to foreach but it map  the result to new array
+        //     array2 = [2, 4, 6, 8, 10, 12, 14];
+        //     const array3 = array1.map((curEle,index,array) =>{
+        //         // console.log(curEle * curEle);
+        //         return curEle*curEle;
+        //     })
+        //     console.log("array2: ", array2);
+        //     console.log("array3: ", array3);
+
+
+        //     //real time use 
+        //     const user =[
+        //         {firstname :"Suchithra1", age:23, address:"Hassan"},
+        //         {firstname :"Suchithra2", age:23, address:"Hassan"},
+        //         {firstname :"Suchithra3", age:23, address:"Hassan"}
+        //     ]
+
+        //     const user1 = user.map((ele) =>{
+        //         return ele;
+        //     })
+
+
+        //3.filter: filters the array based on some conditions
+            const array4 =[1,2,3,4,5,6,7,8,9,10];
+            array5 = array4.filter((curele) =>{// here we filtering the value baesd on condition of is given numnber is even or not
+                return curele % 2 == 1;
+            })
+            console.log("array5: ",array5);
+
+            //real time use 
+            const User =[
+                {firstname :"Suchithra1", age:23, address:"Hassan"},
+                {firstname :"Suchithra2", age:23, address:"Hassan"},
+                {firstname :"Suchithra3", age:23, address:"Hassan"}
+            ]
+
+             const User1 = User.filter((curele) =>{
+               return curele.firstname;
+             })
+
+             console.log("User1: ",User1);
+
+
+        //4. reduce :  it used to whole array elements into single values by perforing some operatins on it
+            //  working:it has three keywords(previous, current, return)
+            // previous | current | return
+            //    1     |    2    |    3
+            //    3     |    3    |    6
+            //    6     |    4    |    10
+            //    10    |    5    |    15
+            const array6 = [1, 2 ,3 ,4 ,5];
+             const res = array6.reduce((previous, current) =>{
+                return previous + current;
+             })//if we not provide previous value
+             console.log("result: ",res);
+
+
+        //5. sort : Sorts elements in place 
+             //default sorting
+                let fruits =  ["Banana","Apple","Mango", "Orange","Cherry"]
+                console.log("Before sorted: ",fruits);
+                const sorted = fruits.sort()
+                console.log("Sorted fruits: ",sorted);
+            
+            //ascending ordered sorting
+                let Number = [2,8,3,9,4,6,0];
+                console.log("Before sorted: ",Number);
+                const asc = Number.sort((a,b) => a-b)
+                console.log("Ascending sorted: ",asc);
+            
+            //descending ordered sorting
+                let Number1 = [2,8,3,9,4,6,0];
+                console.log("Before sorted: ",Number1);
+                const desc = Number1.sort((a,b) => b-a)
+                console.log("descending sorted: ",desc);
+
+        //6.splice : Adds/removes elements at a specific index.
+            //Remove 2 elements starting from index 1
+                let numbers =[1,2,3,4,5];
+                console.log("before splice: ",numbers);
+                const spliced = numbers.splice(1,2);//splice(start index,no.of deleting count)
+                console.log("removed numbers: ",spliced);
+            // Adding elements to index
+                let colors = ["Red", "Blue", "Green"];
+                console.log("before splice: ",colors);
+                colors.splice(1, 0, "Yellow");// Insert "Yellow" at index 1
+                console.log("added colors: ",colors); 
+
+        //7.every :Returns true if all elements meet the condition.
+                let array =[1,2,3,4,5,6,7];
+                let every_res = array.every( array => array > 2);
+                console.log("every element:",every_res);
+
+        
+        //8.some : Checks if at least one element satisfies a condition.
+             //checking for even number 
+                let num = [1,3,5,7,9,10,15];
+                let some_even = num.some(num => num% 2 ===0);
+                console.log("The number given is even: ",some_even);
+
+            //checking for word
+                let words = ["hello", "suchi", "sharu","java"];
+                let contains = words.some(words => words === "java");
+                console.log("The words given is contains: ",contains);
+
+             
+
+
+    </script>
+</body>
+</html>

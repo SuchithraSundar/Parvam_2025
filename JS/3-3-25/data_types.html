@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes in JS</title>
+</head>
+<body>
+    <!-- data tyes -->
+    <h3>1. Numbers</h3>
+    <h3>2. String</h3>
+    <h3>3. booleaan</h3>
+    <h3>4. undefined</h3>
+    <h3>5. null</h3>
+    <h3>6. Bigint</h3>
+    <h3>7. Object</h3>
+    <h3>8. Symbol</h3>
+
+    <script>
+        //1.Number
+        //var, let, const
+            let a = 26;
+            console.log("value of a: ",a)
+            console.log( "Type of a: ", typeof a);
+
+        //2.String
+            let b = "Suchi";
+            console.log("value of b: ",b)
+            console.log( "Type of b: ", typeof b);
+
+        //3.Boolean
+            let c = true;
+            console.log("value of c: ",c)
+            console.log( "Type of c: ", typeof c);
+
+        //4.Undefined
+            let d 
+            console.log("The value of d: ", d);
+            console.log( "Type of d: ", typeof d);
+
+            d = 30;
+            console.log("value of d: ",d)
+            console.log( "Type of d: ", typeof d);
+
+        //5.Null
+            let e = null;
+            console.log("value of e: ",e)
+            console.log( "Type of e: ", typeof e);
+
+
+        //6.Bigint
+            let f =BigInt("121");
+            console.log("The value of f: ", f);
+            console.log( "Type of f: ", typeof f);
+
+        //7.Object
+        // there is no concept of array in JS instead it is considered as object, which can be  defined using either [] or {}
+            let obj = [1,2,3,4,5];
+            console.log("The value of obj: ", obj);
+            console.log("The type of obj: ", typeof obj);
+
+            let obj1={
+                firstName: "Suchithra",
+                lastName : "S"
+            }
+            console.log("The value of obj1: ", obj1);
+            console.log("The type of obj1: ", typeof obj1);
+
+        //8.Symbol
+            let mySymbol = Symbol();
+            console.log(mySymbol);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Object</title>
+</head>
+<body>
+    <h1>Loops in Object</h1>
+    <ol>
+        <li>for in</li>
+        <li>Object.keys() - it will  return the key values in objects</li>
+    </ol>
+    
+    <script>
+        const obj1 ={
+            firstname : "suchithra",
+            age : 23,
+            address : "hassan"
+        }
+
+        //1. for in
+        for (let i in obj1){
+            // console.log(obj1.i);//dot operator is not working
+            // console.log(obj1[i]);
+            console.log(obj1[`${i}`]);
+        }
+
+        //2. Object.keys():
+
+        const obj2 = {
+            firstname : "sharmila",
+            age : 25,
+            address : "banglore"
+        }
+        const res = Object.keys(obj2);
+        console.log("The  result is: ",res);
+        for (let item of res){
+            console.log(obj2[item]);
+        }
+
+    </script>
+</body>
+</html>

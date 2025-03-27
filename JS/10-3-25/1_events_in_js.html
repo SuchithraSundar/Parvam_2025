@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+    <h1>Events in JS</h1>
+    <p>1. Mouse events : These events occur when a user interacts with the mouse.</p>
+        <pre>
+            Other Mouse Events
+            a.dblclick :Double-clicking an element.
+            b.mousedown: When the mouse button is pressed down.
+            c.mouseup : When the mouse button is released.
+            d.mouseover : When the mouse enters an element.
+            e.mouseout: When the mouse leaves an element.
+        </pre>
+
+    <p>2. Keyboard events : Triggered when the user presses or releases a key.</p>
+        <pre>
+            Other Keyboard Events
+            a.keydown: When a key is pressed down.
+            b.keyup: When a key is released.
+        </pre>
+
+    <p>3. Form events : These events are triggered when interacting with form elements.</p>
+        <pre>
+            input : when user interact with inputField
+            
+            Other Form Events
+            a.submit:When a form is submitted.
+            b.focus:When an input field gains focus.
+            c.blur:When an input field loses focus.
+            d.change: when user modified an inputField  
+        </pre>
+        
+    <p>4. Window  events</p>
+    <p>5. Document events</p>
+    <p>6. Clipboard events</p>
+    <p>7. Media events</p>
+
+    <h3 id="htag">Hello HTML</h3>
+    <button id="btn" >Change the text</button>
+
+    <input type="text" id="inputField" placeholder="Type something">
+    <p id="keyMsg"></p>
+
+    <h3>Form Events</h3>
+    <p>1.input</p>
+    <input type="text" name="username" placeholder="username" id="username">
+    <p id="result"></p>
+
+    <p>2.change</p>
+        <input type="text" name="username" placeholder="username" id="username">
+        <select name="number" id="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+    <p>submit</p>
+        <form id="contactForm">
+            <input type="text" name="name" id="name" placeholder="Name"><br><br>
+            <input type="email" name="email" id="email" placeholder="Email"><br><br>
+            <textarea name="message" id="message"  name="message" cols="30" rows="10"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    <script>
+        //1. Mouse events 
+            //basic practice 
+            // const handleClick = ()=>{
+            //     const htag = document.querySelector("#htag")
+            //     htag.innerText = "Hello JS"
+            // }
+
+            //addEventListener
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("click",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+            //double click
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("doubleclick",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+            //mousedown
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("mousedown",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+            //mouseup
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("mouseup",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+            //mouseover
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("mouseover",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+            //mouseout
+            // const btn = document.querySelector("#btn");
+            // const htag =document.querySelector("#htag");
+            // btn.addEventListener("mouseout",() =>{
+            //     htag.textContent = "hello JS";
+            // });
+
+        //2. Keyboard Events
+            // document.getElementById("inputField").addEventListener("keypress",function(event){
+            //     document.getElementById("keyMsg").innerText = "user pressed the button" + event.key;
+            // });
+
+            //keydown
+            // document.getElementById("inputField").addEventListener("keydown",function(event){
+            //     document.getElementById("keyMsg").innerText = "its keydown event";
+            // });
+
+            //keyup
+            // document.getElementById("inputField").addEventListener("keyup",function(event){
+            //     document.getElementById("keyMsg").innerText = "its keyup event";
+            // });
+
+
+        //3.Form Events
+            //input event
+            // const username = document.querySelector("#username");
+            // const result = document.querySelector("#result")
+            // username.addEventListener("input", () =>{
+            //     result.innerText = username.value;
+            // });
+
+            //change event
+            // const username = document.querySelector("#username");
+            // const result = document.querySelector("#result")
+            // username.addEventListener("change", () =>{
+            //     result.innerText = username.value;
+            // });
+
+            // document.querySelector("#number").addEventListener("change",() =>{
+            //     console.log("its change event");
+            // });
+
+            //blur event
+            // const username = document.querySelector("#username");
+            // const result = document.querySelector("#result")
+            // username.addEventListener("blur", () =>{
+            //     result.innerText = username.value;
+            // });
+            
+            // //focus event
+            // const username = document.querySelector("#username");
+            // const result = document.querySelector("#result")
+            // username.addEventListener("focus", () =>{
+            //     console.log("its focus event")
+            //     result.innerText = username.value;
+            // });
+
+            //submit event
+            const contactForm =document.querySelector("#contactForm");
+            contactForm.addEventListener("submit",(event)=>{
+                event.preventDefault();
+                console.log("user submitted form");
+            })//when the user click on submit, it will refresh the whole page,so to prevent those behaviour we use event called preventDefault
+            
+    </script> 
+</body>
+</html>

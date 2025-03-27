@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting HTML in JS</title>
+</head>
+<body>
+    <H1>Selecting HTML in JS</H1>
+        <p id="first_p">1. Using getElementById</p>
+        <p class="sec_p">2. Using getElementsByClassName</p>
+        <p class="sec_p">2. Using getElementsByClassName</p>
+        <p class="sec_p">2. Using getElementsByClassName</p>
+        <p id="thir_p">3. Using querySelector</p>
+    <script>
+        //1 .Using getElementById
+            console.log("Using getElementById");
+            const first_p = document.getElementById("first_p");
+            first_p.style.color = "red";
+
+        //2. Using getElementsByClassName
+            console.log("Using getElementsByClassName");//it will give HTML COLLECTION  as output
+            const sec_p = document.getElementsByClassName("sec_p");
+            sec_p[0].style.color ="green";
+
+        //3. Using querySelector
+            console.log("Using querySelector");//selct single item
+            const thir_p = document.querySelector("#thir_p");//using id
+            //const thir_p = document.querySelector(".thir_p");//using class
+            thir_p.style.color ="blue"; 
+    </script>
+
+</body>
+</html>

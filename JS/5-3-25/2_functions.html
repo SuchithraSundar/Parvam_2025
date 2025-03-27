@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <h1>3 Ways to declare a function</h1>
+        <p>1. function declaration
+            <pre>Syntax:
+                function function_name(parameter){
+                    //code
+                }
+            </pre>
+            <pre>
+                call a function:
+                function_name(argument);
+            </pre>
+        </p>
+
+        <p>2. function expression
+            <pre>Syntax:
+                <!-- datatype variable_name_for_func = function(parameter) -->
+                const  function_name = function(parameter){
+                    //code
+                }
+            </pre>
+            <pre>
+                call a function:
+                function_name(argument);
+            </pre>
+        </p>
+
+        <p>3. arrow function
+            <pre>Syntax:
+                <!-- datatype variable_name_for_func = (parameter) => -->
+                const  function_name = (parameter) => {
+                    //code
+                }
+            </pre>
+            <pre>
+                call a function:
+                function_name(argument);
+            </pre>
+        </p>
+
+    <h2>4 types of function</h2>
+        <p>1. function accepting a parameter and not returning value</p>
+        <p>2. function accepting a parameter and returning value</p>
+        <p>3. function  not accepting a parameter and not returning value</p>
+        <p>4. function  not accepting a parameter and returning value</p>
+
+    <script>
+    //3 Ways to declare a function
+        //1.function declaration:
+                //declaration:
+                // function display(){
+                //     console.log("this is display function");
+                // }
+                //function call:
+                // display();
+
+
+
+        //4 types of function
+            //1. function accepting a parameter and not returning value--in this case return type is missing
+                // function para_not_return(a){//parameter
+                //     console.log(`The value is ${a}`);
+                // }
+                // para_not_return(34);//argument
+
+            //2.  function accepting a parameter and returning value
+                // function para_return(b){
+                //         return b;
+                //     }
+                // const res = para_return("suchi");
+                // console.log(`The result is ${res}`);
+
+            //3. function  not accepting a parameter and not returning value
+                // function not_para_not_return(){
+                //     console.log("hello"); 
+                // }
+                // const res1 = not_para_not_return();
+                // console.log(`The result is ${res1}`); 
+            
+            //4. function  not accepting a parameter and returning value
+                // function not_para_return(){
+                //     return "suchi"; 
+                // }
+                // const res2 = not_para_return();
+                // console.log(`The result is ${res2}`); 
+
+
+                //practice: even or odd number
+                // function even_odd(number){
+                //     if (number % 2 == 0){
+                //         return "even number";
+                //     }
+                //     else {
+                //         return "odd number";
+                //     }
+                //     }
+                // let result = even_odd(8);
+                // console.log(result); 
+
+                // function iseven(number){
+                //     if (number % 2 === 0){
+                //         console.log("even number");
+                //     }
+                //     else {
+                //         console.log("odd number");
+                //     }
+                //     }
+                // const result1 = iseven(30);
+                // if (result1 === true){
+                //     console.log("even number");
+                //     }
+                //     else {
+                //         console.log("odd number");
+                //     }
+    
+    </script>
+
+    <script>
+
+        //2. function expression
+             //1. function accepting a parameter and not returning value--in this case return type is missing
+            //     const fisrt_func= function para_not_return(a){//parameter
+            //         console.log(`The value is ${a}`);
+            //     }
+            //     fisrt_func(34);//argument
+
+
+            // //2. function accepting a parameter and returning value
+            //     const second_func = function para_return(b){
+            //             return b;
+            //         }
+            //     const res = second_func("suchi");
+            //     console.log(`The result is ${res}`);
+
+            // //3. function  not accepting a parameter and not returning value
+            //     const third_func = function not_para_not_return(){
+            //         console.log("hello"); 
+            //     }
+            //     const res1 =third_func();
+            //     console.log(`The result is ${res1}`); 
+
+            //  //4. function  not accepting a parameter and returning value
+            //     const fourth_func = function not_para_return(){
+            //         return "suchi"; 
+            //     }
+            //     const res2 = fourth_func();
+            //     console.log(`The result is ${res2}`);
+                
+    </script>
+
+    <script>
+        //3. Arrow functions
+            //1. function accepting a parameter and not returning value--in this case return type is missing
+                const display1 = () => {//parameter
+                    console.log("this is first arrow function");
+                }
+                display1();//argument
+
+            //2. function accepting a parameter and returning value
+                const second_func = (b) => {
+                        return b;
+                    }
+                const res = second_func("this is second arrow function");
+                console.log(`The result is ${res}`);
+
+            
+            //3. function  not accepting a parameter and not returning value
+                const third_func = () => {
+                    console.log("this is third arrow function"); 
+                }
+                const res1 =third_func();
+                console.log(`The result is ${res1}`); 
+
+            //  //4. function  not accepting a parameter and returning value
+                const fourth_func = () => {
+                    return "this is fourth arrow function"; 
+                }
+                const res2 = fourth_func();
+                console.log(`The result is ${res2}`);
+
+    </script>
+
+</body>
+</html>

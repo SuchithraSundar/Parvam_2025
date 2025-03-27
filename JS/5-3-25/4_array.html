@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+    <!-- in Js array is heterogenious : which means it can hold multiple data of different datatypes in single variable-->
+</head>
+<body>
+    <h1>Array in JS</h1>
+    <h3>Operations on array</h3>
+    <p>1. push</p>
+    <p>2. pop</p>
+    <p>3. unshift</p>
+    <p>4. shift</p>
+
+    <script>
+        let array1 = [1, 2, 3, 4, 5, 6]
+        console.log(array1);
+        console.log(array1[3]);
+
+        //push and pop- used to add and delete elements to and from the array ends
+            array1.push(23);
+            console.log("After pushing : ",array1);
+            const res = array1.pop();
+            console.log("The  poped element is: ",res);
+            // const res1 = array1.pop();
+            // console.log("The  poppedd element is: ",res1);
+            console.log("After poping : ",array1);
+
+        //unshift and shift - used to add and delete elements to and from the array starting
+            let array2 = [1, 2, 3, 4, 5, 6]
+            
+            console.log("before unshifting : ",array2);
+            array2.unshift(0);
+            console.log("After unshifting : ",array2);
+            
+            // const res1 =array2.unshift();
+            // console.log("unshifting  element is: ",res1);
+            
+            array2.shift();
+            console.log("After shifting : ",array2);
+        
+    </script>
+
+    <script>
+        let array3 = [12, "hi", true, null, {"name":"suchi"}];
+        console.log(array3);
+        console.log(array3[4]);
+        console.log(typeof array3[4]);
+
+        //practice
+        for (let item  of  array3){
+            console.log("item: " , item);
+            console.log("type of items: " , typeof item);
+        }
+    </script>
+</body>
+</html>

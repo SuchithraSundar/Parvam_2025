@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+<body>
+    <!--stirng is immutable  -->
+    <h1>Strings in JS</h1>
+    <p>Methods inn Strings</p>
+    <p>1. length - Syntax: String.length: number</p>
+    <p>2. slice - Syntax: String.slice(start?: number, end?: number): string</p>
+    <p>3. substring - Syntax : String.substring(start: number, end?: number): string </p>
+    <p>4. substr - Syntax : String.substr(from: number, length?: number): string</p>
+    <p>5. replace - Syntax : String.replace(searchValue: string | RegExp, replaceValue: string): string </p>
+    <p>6. toUpperCase - Syntax : String.toUpperCase(): string </p>
+    <p>7. toLowerCase - Syntax : String.toLowerCase(): string</p>
+    <p>8. trim() - Syntax :  String.trim(): string</p>
+    <p>9. indexof() - Syntax : String.indexOf(searchString: string, position?: number): number</p>
+    <p>10. startswith() - Syntax : String.startsWith(searchString: string, position?: number): boolean </p>
+    <p>11. endswith() - Syntax : String.includes(searchString: string, position?: number): boolean</p>
+    <p>12. includes - Syntax: String.includes(searchString: string, position?: number): boolean</p>
+    <p>13. concat() - Syntax : String.concat(...strings: string[]): string </p>
+    <script>
+        // let  str1= "Hello world";
+        // console.log(str1);
+        // console.log(typeof str1);[//]
+
+        //1.length
+            let  str1= "Hello world"; 
+            const len = str1.length;
+            console.log(`The length of string ${str1} is : ${len}`);
+            //    console.log("The length of string " + "str1" + "is" +len);//bad practice
+            //    console.log("The length of stri
+            // ng ", str1, "is : ", len);
+
+    
+        //2.slice
+            let str2 = "javascript";
+            let str3 = str2.slice(2,7);
+            console.log(`The sliced string is : ${str3}`);
+            console.log(str2[5]);//positive indexing starts from 0(left to right)
+            console.log("The sliced string is :", str2.slice(-10, -4));//negative indexing which is in reverse order(right to left)
+
+            //practice
+            // let string1 = "suchithras";
+            // const string2 = string1.slice(3,7);
+
+        //3. substring: 
+            let str4 = "hellojavascript";
+            let str5 = str4.substring(2,7);//exclude last index value
+            console.log(`The substring is ${str5}`);
+            console.log(`The string is ${str5.substring(-13, -8)}`);//negative indexing is not supported
+
+
+        //4. substr
+            let str6 = "Hello world";
+            let str7 = str6.substr(2,7);
+            console.log(`The string is ${str7}`);
+            console.log(`The string is ${str6.substr(-9, 7)}`);//syntax: (starting index: length of string)
+
+
+        //5. replace: syntax- (search string; replace)
+            let str8 = "java script"
+            let str9 = str8.replace("java","python");
+            console.log(`The string is ${str9}`);
+
+        //6. toUpperCase()
+            let str10 = "suchithra s";
+            let str11 = str10.toUpperCase(str10);
+            console.log(`The Uppercase of string is ${str11}`);
+
+        //7. toLowerCase()
+            let str12 = "RISHON PAUL";
+            let str13 = str12.toLowerCase(str12);
+            console.log(`The Lowercase of string is ${str13}`);
+
+        //8. trim()
+            //a.trim()
+                let str14 = "     hello     ";
+                let str15 = str14.trim();
+                
+                console.log(`The string is ${str14}`);
+                console.log(`The string is ${str15}`);
+
+             //b.trimLeft()-similar to trimEnd()
+                let str16 = "         hello     ;";
+                let str17 = str14.trimLeft();
+                console.log(`The string is ${str16}`);
+                console.log(`The string is ${str17}`);
+
+             //c.trimRight()-similar to trimstart()
+                let str18 = "         hello      ";
+                let str19 = str14.trimRight();
+                console.log(`The string is ${str19}`);
+                console.log(`The string is ${str19}`);
+
+
+        //9. indexof()
+            let str20 = "Hello world";
+            let str21 = str20.indexOf("wor");
+            console.log(`The string is ${str21}`);
+
+        //10. startswith()
+            let str22 = "hello javascript";
+            let res1 = str22.startsWith("java");
+            console.log(`The result is ${res1}`);
+
+        //11.endswith()
+            let str23 = "hello javascript";
+            let res2 = str22.endsWith("t");
+            console.log(`The result is ${res2}`);
+
+
+        //12. includes()
+            let str24 = "hello javascript and python";
+            let res3 = str24.includes("java");
+            console.log(`The result is ${res3}`);
+
+        //13. concat()
+            let str25 = "hello";
+            let res4 = str25.concat(" javascript");
+            console.log(`The result is ${res4}`);
+
+    </script>
+</body>
+</html>

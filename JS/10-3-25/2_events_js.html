@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <p>DOMContentLoaded</p>
+    <button id="btn">Click</button>
+    
+    <h1>JavaScript Event Examples</h1>
+
+    <!-- Clipboard Events -->
+    <textarea id="clipboardArea" placeholder="Copy or paste text here"></textarea>
+
+    <!-- Media Events -->
+    <video id="myVideo" width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
+
+    <script>
+        //4.DOMContentLoaded
+        document.addEventListener("DOMContentLoaded",()=>{
+            console.log("Its DOM event");
+            document.getElementById("btn").addEventListener("click",(e)=>{
+                console.log(e.target.textContent);
+            })
+        })
+
+
+
+         // 5.Window Event - Resize
+        window.addEventListener('resize', () => {
+            console.log('Window resized to', window.innerWidth, 'x', window.innerHeight);
+        });
+
+      
+
+        // 6.Clipboard Events - Copy and Paste
+        document.getElementById('clipboardArea').addEventListener('copy', () => {
+            console.log('Text copied!');
+        });
+
+        document.getElementById('clipboardArea').addEventListener('paste', () => {
+            console.log('Text pasted!');
+        });
+
+        //7. Media Events - Play and Pause
+        const video = document.getElementById('myVideo');
+
+        video.addEventListener('play', () => {
+            console.log('Video started playing');
+        });
+
+        video.addEventListener('pause', () => {
+            console.log('Video paused');
+        });
+
+
+    </script>
+</body>
+</html>

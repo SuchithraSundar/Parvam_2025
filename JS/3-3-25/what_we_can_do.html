@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What we can do</title>
+</head>
+<body>
+    <h3>1. we can change HTML content</h3>
+    <p id="demo" >This is the existing content</p>
+    <button onclick="document.getElementById('demo').innerText='JS will change the HTML content'">Change Content</button>
+
+    <h3>2. we can change attributes of HTML</h3>
+    <img src="./off.jpeg" alt="image" width="100px" height="100px" id="bulb_img"><br>
+
+    <button type="button" onclick="document.getElementById('bulb_img').src='./on.jpeg'"> TURN ON</button>
+    <button type="button" onclick="document.getElementById('bulb_img').src='./off.jpeg'"> TURN OFF</button>
+
+    <h3>3. we can change CSS Style</h3>
+    <p id="demo2">lorem</p>
+    <button onclick="document.getElementById('demo2').style.color='blueviolet'">Color</button>
+    <button onclick="document.getElementById('demo2').style.backgroundColor='bisque'">background</button>
+    <button onclick="document.getElementById('demo2').style.fontSize='50px'">fontsize</button>
+
+    <h3>4. we can hide the html code</h3>
+    <p id="demo4">Lorem, ipsum.</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='none'">Hide</button> 
+
+    <h3>5. we can show the html code</h3>
+    <p id="demo5" style="display: none;">Lorem, ipsum.</p>
+    <button type="button" onclick="document.getElementById('demo5').style.display='block'">Show</button> //except 
+
+    
+</body>
+</html>
