@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object table</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object table using for each</h1>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>USN</th>
+            <th>Address</th>
+        </thead>
+        <tbody id="table">
+            
+        </tbody>
+    </table>
+
+    <script>
+        const obj1 =[
+            {name:"suchithra1", usn:20, address :"Hassan" },
+            {name:"sharmila", usn:21, address :"Hassan" },
+            {name:"anitha", usn:22, address :"Hassan" },
+            {name:"vivek", usn:23, address :"Hassan" },
+            {name:"edwin", usn:24, address :"Hassan" },
+            {name:"franklin", usn:25, address :"Hassan" }        
+        ]
+
+       let content = " ";
+       obj1.forEach(item =>{
+            content += `<tr>
+                <td>${item.name}</td>
+                <td>${item.usn}</td>
+                <td>${item.address}</td>
+                </tr>`
+       })
+       console.log(content);
+       document.getElementById('table').innerHTML=content;
+    </script>
+</body>
+</html>

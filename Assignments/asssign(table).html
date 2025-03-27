@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="6">TIME-TABLE</th>
+        </tr>
+        
+        <tbody>
+            <tr>
+                <th rowspan="6">HOURS</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>science</td>
+                <td>math</td>
+                <td>science</td>
+                <td>arts</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>science</td>
+                <td>math</td>
+                <td>science</td>
+                <td>arts</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">Lunch</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>science</td>
+                <td>math</td>
+                <td rowspan="2" colspan="2">project</td>
+            </tr>   
+            <tr>
+                <td>math</td>
+                <td>science</td>
+                <td>math</td>   
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+

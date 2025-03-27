@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+    <h1>Events in JS</h1>
+    <p>1. Mouse events</p>
+    <p>2. Keyboard events</p>
+    <p>3. Form events</p>
+    <button id="clickButton">Click Me</button><br><br>
+
+    <button id="hoverDiv">Hover over me! </button><br><br>
+
+    <input type="text" id="textInput" placeholder="Type something..."><br><br>
+
+    <form id="myForm">
+        <input type="text" placeholder="Enter something">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+    // 1. Mouse events
+        //mouse click
+        document.getElementById("clickButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+
+        //mousehover & mouseout
+        const button = document.getElementById("hoverDiv");
+
+        button.addEventListener("mouseover", function() {
+            button.style.background = "yellow";
+        });
+
+        button.addEventListener("mouseout", function() {
+            button.style.background = "lightblue";
+        });
+
+    // 2. Keyboard events
+
+        document.getElementById("textInput").addEventListener("keydown", function(event) {
+            console.log("Key Pressed:", event.key);
+        });
+
+        document.getElementById("textInput").addEventListener("keyup", function(event) {
+            console.log("Key Released:", event.key);
+        });
+
+    
+    // 3. Form events
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert("Form submission prevented!");
+        });
+
+    </script>
+
+</body>
+</html>

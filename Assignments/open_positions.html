@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open_positions</title>
+    <style>
+        body {
+           margin: 0;
+           padding: 0;
+           text-align: center;
+           background-color: aliceblue;
+           font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            margin:50px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            padding:80px;
+        }
+
+        .card{
+            background:white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card p{
+            background: white;
+            color: rgb(39, 33, 33);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            border: 1px solid black;
+
+        }
+
+        .card p:hover{
+            background-color: aqua;
+        }
+
+        .card.active p:hover{
+            background-color: burlywood;
+        }
+
+        .card:hover{
+            transform: translateY(10px);
+        }
+
+        .card.active p {
+            background:black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .icon {
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px; 
+            display: inline-block;
+        }
+
+        .design { background-color: #F8E1F4; }
+        .engineering { background-color: #FAD2D4; }
+        .operations { background-color: #D6E6FF; }
+        .people { background-color: #D1F5E5; }
+        .sales { background-color: #E0E8F1; }
+        .university { background-color: #FAE3C4; }
+                
+    </style>
+</head>
+<body>
+    <section class="=container"> 
+        <h1>Open Positions</h1>
+        <div class="grid">
+
+            <div class="card">
+                <div class=" icon design">🎨</div>
+                <h3>Design</h3>
+                <p>4 open positions</p>
+            </div>
+
+            <div class="card active">
+                <div class="icon engineering">💻</div>
+                <h3>Enginerring</h3>
+                <p>8 open positions</p>
+            </div>
+
+            <div class="card">
+                <div class=" icon operations">⚙️</div>
+                <h3>Opertaions</h3>
+                <p>2 open positions</p>
+            </div>
+
+            <div class="card">
+                <div class="icon people">👥</div>
+                <h3>People</h3>
+                <p>6 open positions</p>
+            </div>
+
+            <div class="card">
+                <div class="icon sales">📋</div>
+                <h3>Sales</h3>
+                <p>7 open positions</p>
+            </div>
+
+            <div class="card">
+                <div class="icon university">🎓</div>
+                <h3>University</h3>
+                <p>8 open positions</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

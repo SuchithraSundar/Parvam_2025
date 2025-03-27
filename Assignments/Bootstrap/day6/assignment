@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bootstrap Layout</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header, .nav, .footer {
+            background: #ddd;
+            text-align: center;
+            padding: 20px;
+            margin: 5px 0;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            height: 300px; /* Increased height */
+        }
+        .content {
+            width: 20%;
+            background: #ddd;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-content {
+            width: 55%;
+            background: #ddd;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Menu</div>
+        <div class="content-wrapper">
+            <div class="content">Content</div>
+            <div class="main-content">Main Content</div>
+            <div class="content">Content</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

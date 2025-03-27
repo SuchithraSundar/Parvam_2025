@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects table</title>
+    <style>
+        table,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+            padding: 10px 30px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables using Objects</h1>
+    <table>
+        <thead>
+            <th>Firstname</th>
+            <th>Age</th>
+            <th>Address</th>
+        </thead>
+        <tbody id="table_body">
+            
+        </tbody>
+     </table>
+
+    <script>
+        const users =[
+            {firstname :"Suchithra1", age:23, address:"Hassan"},
+            {firstname :"Suchithra2", age:23, address:"Hassan"},
+            {firstname :"Suchithra3", age:23, address:"Hassan"},
+            {firstname :"Suchithra4", age:23, address:"Hassan"},
+            {firstname :"Suchithra5", age:23, address:"Hassan"},
+            {firstname :"Suchithra6", age:23, address:"Hassan"},
+            {firstname :"Suchithra7", age:23, address:"Hassan"},
+        ]
+        /* const contet =" ";
+        for (let item of users){
+            console.log(item);
+            console.log(item.firstname);
+        } */
+         let content =" ";
+         for(let item of users){
+            content += `<tr>
+                <td> ${item.firstname}</td>
+                <td> ${item.age}</td>
+                <td> ${item.address}</td>
+            </tr>`
+         }
+         console.log(content);
+         document.getElementById('table_body').innerHTML = content;
+    </script>
+
+</body>
+</html>
