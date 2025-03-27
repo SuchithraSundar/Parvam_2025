@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .row1, .row2, .row4{
+            background-color:azure;
+            border:1px solid gray;
+            padding:10px;
+            text-align: center;
+            font-weight: bold;
+            gap:20px;
+        } 
+        .box1, .box2, .box3{
+            background-color:azure;
+            border:1px solid gray;
+            padding:10px;
+            height: 200px;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            font-weight: bold;
+            gap:20px;
+            margin:1px;
+        }
+
+        .row3{
+            display: flex;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Grid in Bootstrap</h1>
+    <div class="container mt-3">
+         <!-- max columns used to create 1 row is 12 -->
+        <div class="row1 g-3">
+            <div class="col-12  box">Header</div>
+        </div><br>
+
+         <div class="row2 g-3">
+            <div class="col-12 box">Navigation Menu</div>
+        </div><br>
+
+        <div class="row3 g-3">
+            <div class="col-3 box1">Content</div>
+            <div class="col-6 box2"> Main Content</div>
+            <div class="col-3  box3">Content</div>
+        </div><br>
+
+        <div class="row4 g-3">
+            <div class="col-12 box">Footer</div>
+        </div>
+        
+
+    </div>
+        
+</body>
+</html>
