@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 50vh;
+            position: relative;
+            border:2px solid black;
+            padding: 10px;
+            display: flex;
+            gap:10px;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            border:2px solid gray;
+            text-align: center;
+            align-content: center;
+            justify-content:  center;
+        }
+
+        .fir{
+            background-color: aqua;
+            animation-name: change_bg;
+            animation-duration: 8s;
+            animation-timing-function:ease-out ;
+            animation-timing-function:linear ;
+            position: absolute;
+        }
+
+        .main{
+            animation-name: main_bg;
+            animation-duration: 8s;
+            animation-timing-function:ease-out;
+
+        }
+
+        /* for animation we use @keyframe with identifier name */
+        @keyframes change_bg{
+            from{
+                background-color:deeppink;
+            }
+            to{
+                background-color:gold;
+            }
+
+            0%{
+                background-color: aqua;
+                top:0;
+                left:0;
+            }
+
+            25%{
+                background-color:bisque;
+                /* top:0; */
+                /* right:0; */
+                top:0;
+                left:500px;
+            }
+
+            50%{
+                background-color:brown;
+                /* bottom:0; */
+                /* right:0; */
+                top:250px;
+            }
+
+            75%{
+                background-color: chartreuse;
+                /* bottom: 0; */
+                /* left:-1; */
+                top:280px;
+                right:500px;
+            }
+
+            100%{
+                background-color: chartreuse;
+                bottom: 0;
+                left:-1;
+            }
+        }
+
+        @keyframes main_bg{
+            from{
+                background-color:yellow;
+            }
+            to{
+                background-color:green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container main">
+        <div class="child fir">1</div>
+    </div>
+    
+</body>
+</html>

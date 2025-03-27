@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        /* syntax: not only media_type(can be screen, print) and (condition) and (condition) */
+        @media only screen and (min-width:600px) and (max-width:1000px){
+            .container{
+                background-color:coral;
+            }
+        }
+
+        @media only screen and (min-height:300px) and (max-height:600px){
+            .container{
+                background-color:coral;
+            }
+        }
+
+        /* @media not only screen and (min-width:500px) and (max-width:800px){
+            
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos architecto officiis nobis quam asperiores molestias incidunt, sint facere corrupti nesciunt?
+    </div>
+</body>
+</html>

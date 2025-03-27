@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root{
+            --aqua:rgb(243, 209, 108);
+            --green:rgb(148, 198, 49);
+        }
+        .ptag{
+            background-color:var(--aqua);
+        }
+
+        .divtag{
+            background-color:var(--green);
+        }
+
+        .ptag1{
+            background-color:var(--aqua);
+        }
+
+        .divtag1{
+            --pink:rgb(241, 85, 220);
+            background-color:var(--pink);
+        }
+
+        .container{
+            margin: 20px auto;
+            border: 2px solid black;
+            width:50vw;
+            height: 30vh;
+            padding: 10px;
+        }
+        .child{
+            width: 100px;
+            height:100px;
+            border: 2px solid blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fir{
+            background-color: aqua;
+            
+            z-index: 1;
+        }
+
+        .sec{
+            background-color: chocolate;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <p class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sapiente?</p>
+    
+    <div class="divtag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum?</div>
+
+    <p class="ptag1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sapiente?</p>
+    
+    <div class="divtag1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum?</div>
+
+    <div class="container">
+        <div class="child fir"></div>
+        <div class="child sec"></div>
+    </div>
+</body>
+</html>
