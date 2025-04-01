@@ -1,0 +1,21 @@
+1. Create a BankAccount class with private fields for account number, account holder name, and balance. Provide public methods to deposit and withdraw money while ensuring the balance cannot go negative.
+
+
+2. Create a Vehicle base class with attributes like brand and speed, and a Car subclass that adds extra properties like numDoors. Implement methods to display details.
+
+
+3. Create an abstract class Employee with an name state and abstract method calculateSalary(). Create subclasses FullTimeEmployee and PartTimeEmployee that implement the method.
+
+
+4. Create an interface Animal with methods eat() and makeSound(). Implement this interface in Dog and Cat classes.
+
+5. Create a Shape class with a calculateArea() method. Create Circle and Rectangle subclasses that override this method to calculate and print their areas.
+
+6. Student Grade System:
+=====================
+Create a Student class with private fields for name, rollNumber, and marks.
+
+Provide methods to get and set values.
+
+Implement a method to determine if the student has passed (marks >= 40).
+
