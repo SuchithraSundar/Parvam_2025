@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        Explain event listeners (click, mouseover) .
+        Task: Create a simple webpage with a div box. When the user hovers over it, change the background color randomly
+    </div>
+
+    
+    <div id="box" style="width:200px; height:100px; background:lightgray; text-align:center; line-height:100px; border:2px solid black;">
+        Hello World
+    </div>
+
+    <!-- code here -->
+    <script>
+        document.getElementById("box").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        });
+    </script>    
+
+</body>
+
+</html>

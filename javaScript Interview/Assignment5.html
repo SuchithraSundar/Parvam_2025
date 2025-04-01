@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js assignment-5</title>
+</head>
+
+<body>
+    <div>
+        Explain function declaration, function expressions, and arrow functions.
+        <br>
+        Task: Write a function that takes two numbers as input and returns their sum. Execute it for multiple test cases.
+    </div>
+
+    <!-- code here -->
+    <script>
+            // Taking input as numbers
+            let a = Number(prompt("Enter value for a:"));
+            let b = Number(prompt("Enter value for b:"));
+    
+            // Function Declaration
+            console.log("function declaration");
+            function addNumbers(a, b) {
+                return a + b;
+            }
+    
+            // Function Expression
+            console.log("function eexpression");
+            const addNumbersExp = function(a, b) {
+                return a + b;
+            };
+    
+            // Arrow Function
+            console.log("arrow function");
+            const addNumbersArrow = (a, b) => a + b;
+    
+    
+            console.log("Function Declaration:", addNumbers(a, b));
+            console.log("Function Expression:", addNumbersExp(a, b));
+            console.log("Arrow Function:", addNumbersArrow(a, b));
+    
+        
+        </script>
+    </body>
+    </html>
+    
+
+</body>
+
+</html>

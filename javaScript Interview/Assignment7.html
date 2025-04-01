@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js assignment-7</title>
+</head>
+<style>
+        #div {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            border: 2px solid black;
+            transition: background-color 0.3s ease-in-out;
+        }
+</style>
+
+<body>
+    <div>
+        Explain event listeners (click, mouseover) .
+        Task: Create a simple webpage with a div box. When the user hovers over it, change the background color to green
+    </div>
+    <br><br>
+
+    <div id="div">
+        hello world
+    </div>
+
+    <!-- code here -->
+     <script>
+        const div = document.getElementById("div");
+        div.addEventListener("mouseover",()=>{
+            div.style.backgroundColor="green";
+        })
+        
+        const div1 = document.getElementById("div");
+        div.addEventListener("mouseout",()=>{
+            div.style.backgroundColor="grey";
+        })
+        
+     </script>
+
+</body>
+
+</html>
