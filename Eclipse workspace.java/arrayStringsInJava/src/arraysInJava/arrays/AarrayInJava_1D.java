@@ -49,9 +49,14 @@ public class AarrayInJava_1D {
 //		}
 		
 	
+//disadvantages :
+//1.we cant't change array size
+//2.it can store only same datatype
+//3.we can't shrink
 		
-		
-
+//advantages:
+//1. random access
+//2. type safety & type casting
 	}
 
 }

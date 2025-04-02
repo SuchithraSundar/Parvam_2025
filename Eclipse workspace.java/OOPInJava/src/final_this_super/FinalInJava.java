@@ -35,6 +35,7 @@ public class FinalInJava {
 		 * *final with variables: the variables value can't be changed
 		 * *final with method: we can't override method when  final keyword used in method
 		 * *final with class: 
+		 * for final method it  is possible to create instances,as we can create the  object
 		 * */
 
 		//variables:

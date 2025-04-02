@@ -22,7 +22,7 @@ class ChildClass2 extends ParentClass1{
 public class InheritanceInJava_heirarchical {
 
 	public static void main(String[] args) {
-	// Heirarchical inheritance : Single parent multiple child3
+	// Heirarchical inheritance : Single parent multiple childs
     System.out.println("Childclass1 extending Parent1");
 	ChildClass1  c = new ChildClass1();
 	c.ChildClass1Method();

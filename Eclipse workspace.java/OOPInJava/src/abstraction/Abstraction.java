@@ -46,10 +46,12 @@ public class Abstraction {
 		 * it s a process of hiding the implementation and showing only the essential resources
 		 * it is not possible to create instances for abstract
 		 * 
+		 * for abstract method it not possible to create instances,as we can't create the  object
+		 * 
 		 * 2 ways:
 		 * =======
 		 * 1.Interfaces(gives 100% abstraction/ hiding)
-		 * abstract class(0-100%)
+		 * 2.abstract class(0-100%)
 		 * 
 		 * */
 

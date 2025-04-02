@@ -21,6 +21,7 @@ public class ClassObjectInJava {
 
 public static void main(String[] args) {
 	
+	//object creation for Student class
 	Student std1 = new Student();
 	System.out.println(std1.name);
 	System.out.println(std1.age);

@@ -34,7 +34,7 @@ class Child2 extends Parent{
 	}
 	
 	static void childMethod3() {
-		System.out.println("Its a  Static hild Method");
+		System.out.println("Its a  Static Child Method");
 	}
 }
 
@@ -56,7 +56,7 @@ public class InheritenceInJava_singlelevel {
 		 * types of Inheritance:
 		 * --------------------
 		 * 1. single-level : single parent and child
-		 * 2. multi-level : multiple parent and single child
+		 * 2. multi-level : multiple parent and single child:grandparent --> parent-->child
 		 * 3. heirarcichal : single parent and multiple child
 		 * 4. hybrid : mixing of different inheritance (like interface to child  inheritance and parent class to child class inheritance)
 		 * 5. multiple : not possible

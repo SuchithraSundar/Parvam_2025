@@ -1,0 +1,16 @@
+Spring boot Layered Architecture:
+----------------------------------
+there are mainly 5 layers:
+DTO(data transfer object)
+1.front-end:it is users web browser 
+2.controller: it will take request from user (front-end) and passes it to service layer
+3.service:it creates business logics based on request from controller  and interact with repository layer like findAll(), select*From 
+4.repository: it is data access layer 
+	2types of repo
+	--> 1.CRUD repo - for create,read,update and delete,
+	--> 2.JPA repo - for crud and pagination/sorting(JPA-->Java Persistent API)
+5.datasource: it stores the entity in actual database like Mysql, postgresql, mongoDB
+
+
+process:
+*clients(front-end) sends request to controller(ex:localhost:8080/students)

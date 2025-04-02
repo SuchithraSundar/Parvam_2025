@@ -42,8 +42,15 @@ public class EncapsulationInJava {
 		 * encapsulation:
 		 * ==============
 		 * Encapsulation is a mechanism that binding the data info into a single unit
-		 * i,e making field(state) */
-		
+		 * It is the process of hiding the internal details of a class and
+		 * restricting direct access to its fields while providing controlled access through methods.
+		 * i,e making field(state) 
+		 * 
+		 * 
+		 * Encapsulation is achieved by:
+		 * *Declaring class variables as private
+		 * *Providing public getter and setter methods to access and modify the variables*/
+	
 		
 		//accessing data using getter and setter:
 		
@@ -60,7 +67,7 @@ public class EncapsulationInJava {
 		
 		//accessing data using  constructor
 		Student std1  = new Student("Suchithra", 23, 405.46);
-		System.out.println(std1);//it  will give the object address so that we use ToString method
+		System.out.println(std1);//instead of actual output,it  will give the object address so that we use ToString method
 		
 
 	}

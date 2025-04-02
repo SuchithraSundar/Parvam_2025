@@ -1,0 +1,178 @@
+Java 8 features:
+================
+1.lambda expressions
+2.functional interface
+3.predicate
+4.consumer
+5.supplier
+6.function
+7.stream API
+
+
+1. lambda expressions:
+----------------------
+1.It is also called anonymous  function(without name)
+2.There is return type
+3.There is no access modifier
+
+*to use lambda expressions, first we need to create a functional interface
+
+
+examples:
+1.
+//normal way
+	public int add(int a, int b){
+		return a+b;
+	}
+//lambda ex
+	(int a,int b)->{
+		return a+b;
+	}
+	
+2.
+//normal way
+public String findLength(String s){
+	return s.length;
+}
+
+//lambda ex
+(String s)->{return s.length()}
+
+3.
+//normal way
+public void print(){
+syso("Hello World");
+}
+
+//lambda ex
+()-> {syso("Hello world")}
+	
+	
+Important points:
+=================
+1. no need to specify the type of the data
+	(a,b)->{
+		return a+b;
+	}
+
+2. if the statement is single line then not require of {} and return
+ 	(s) -> s.length
+ 	
+ 3. if we are passing the single parameter then no need of ()
+ 	s -> s.length
+ 	
+ 4. if there is no parameter then () is must
+	 ()-> {syso("Hello world")}
+ 
+ 5. if there is a multiple parameter then it need to seperate by ,
+ 	(a,b)->a+b
+ 	
+ 2.Functional Interface:
+ =========================
+ *Interface contain only one abstract method
+ example:constructor.
+ 
+ *@FunctionalInterface -> functional interface
+ 
+ 
+ PREDEFINED FUNCTIONAL INTERFACES
+ ---------------------------------
+ 
+ 3.predicate:
+ =============
+ *it will holds a condition
+ *predicate has one method called test which takes only one parameter and returns the output values as  boolean 
+ 
+ example:
+ //to find the number is even or odd
+	Predicate<Integer> p = (a) -> a % 2 == 0;	
+	System.out.println(p.test(21));
+	
+4.Consumer:
+===========
+*it will consume value but won't return anything
+*accept() --> to consume any value by user it has method 
+
+example:
+Consumer<String> c = (s)-> System.out.println(s);
+c.accept("Suchithra");
+ 
+ 5. Supplier:
+ ============
+ *it won't take anything but it will returns the value
+ *Supplier has one method--> get()
+ 
+ 
+ 6.Function:
+=============
+* it will take one parameter and perform action and return value
+* apply() -> method to take parameter
+* Syntax:
+* -------
+* Function<T, R>
+*-->Here T is data type for which we perform action
+* -->And R is return type
+
+
+7.stream API:
+=============
+
+collection:
+-----------
+* to represent a group of individual objects as single entity then we go for Collection
+
+stream:
+-------
+* to work with multiple objects or collection then we go for streams
+
+Syntax:
+-->source.intermediate_operation.termination_operation;
+ex:list.stream().filter(x->x%2==0).count();
+
+
+key points:
+1.source:
+-->on which we are  applying stream
+
+2.intermediate operation:
+-->the operation that will return the another stream
+
+3.termination operation:
+-->it will terminate the stream 
+-->after applying the termination operation o the streams we can't reuse it
+--.for each stream we can use only one termination operation and it is must
+
+example:
+	List<Integer> list = new ArrayList<>();
+	list.add(10);
+	list.add(20);
+	list.add(30);
+	list.add(40);
+	
+	list.stream().filter(x->x%2==0).count();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+key points:

@@ -28,7 +28,8 @@ class ChildC extends ParentP implements Interface{
 public class InheritanceInJava_Hybrid {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Hybrid inheritance is a combination of two or more types of inheritance (e.g., single, multiple, multi-level, hierarchical).
+		//java doesn't support it
 
 	ChildC c = new ChildC();
 	c.C_Method();
