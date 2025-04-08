@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees_CRUD in Spring Boot</title>
+    <style>
+    *{
+    margin:20px;
+    padding:10px;
+    box-sizing:border-box;
+    
+    
+    }
+ 	body{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	}
+	
+    table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    }
+
+    th, td {
+    padding: 10px; 
+    text-align: center; 
+    border: 1px solid black; 
+        }
+
+    th {
+    background-color: Green; 
+    color: white; 
+    }
+    
+    tr:nth-child(even){
+ 	background-color:lightgrey;     
+ 	}
+ 	
+ 	tr:hover{
+ 	 background-color:violet;
+ 	 }
+ 	 
+ 	a{
+ 	border:1px solid black;
+ 	text-decoration:none;
+ 	margin:5px;
+ 	padding:5px;
+ 	}
+ 	
+ 	.edit{
+ 	background-color:yellow;
+ 	color:black;
+ 	border-radius:7px;
+ 	}
+ 	
+ 	.delete{
+ 	background-color:red;
+ 	color:white;
+ 	border-radius:7px;
+ 	}
+ 	
+ 	.add{
+ 	background-color:bisque;
+ 	color:brown;
+ 	font-weight:bolder;
+ 	border-radius:7px;
+ 	align-self:flex-start;
+ 	}
+ 	
+ 	 
+	</style>
+    
+</head>
+
+<body>
+	<h1 style="font-size:40px">Employee List</h1>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+        <tbody>
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.id}"></td>
+                <td th:text="${employee.fname}"></td>
+                <td th:text="${employee.lname}"></td>
+                <td th:text="${employee.email}"></td>
+                <td th:text="${employee.phone}"></td>
+                <td th:text="${employee.address}"></td>
+                <td>
+                    <a th:href="@{/edit-employee(id=${employee.id})}" class="edit">edit</a>
+                    <a th:href="@{/delete-employee(id=${employee.id})}" class="delete">delete</a>
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+     <a th:href="@{/add_employee}" style="font-size:20px" class="add">Add Employee</a>
+</body>
+
+
+</html>

@@ -52,3 +52,14 @@
 2025-04-08 14:57:35,912 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-04-08 14:57:35,933 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
 2025-04-08 14:57:35,972 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\RegistrationForm\src\test\resources
+2025-04-08 15:46:33,906 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-08 15:57:47,332 [Worker-33: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.registration:Registration:0.0.1-SNAPSHOT @ C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\Registration\pom.xml.
+2025-04-08 15:57:49,887 [Worker-33: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Registration/src/main/java
+2025-04-08 15:57:49,893 [Worker-33: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Registration/src/main/resources
+2025-04-08 15:57:49,896 [Worker-33: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Registration/src/main/resources
+2025-04-08 15:57:49,898 [Worker-33: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Registration/src/test/java
+2025-04-08 15:57:49,901 [Worker-33: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Registration/src/test/resources
+2025-04-08 15:57:51,154 [Worker-33: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
+2025-04-08 15:57:52,754 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-04-08 15:57:52,797 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources from src\main\resources to target\classes
+2025-04-08 15:57:52,839 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\Registration\src\test\resources
