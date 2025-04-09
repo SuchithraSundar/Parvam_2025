@@ -1,0 +1,19 @@
+SpringBoot Security
+===================
+Spring Security is all about authentication and  authorization
+	-->Authentication - who you are?
+	-->Authorization - access or roles or promises
+
+We can authenticate user in multiple ways:
+=========================================
+Username and password
+JWT(json web tocken ) Tocken -
+OAuth2.0 authentication i.e logging using google, GitHub, facebook account
+
+By default spring security will provide user name and password authentication
+
+1. For RestAPI spring boot, spring security will provide HTTPBasicAuthenticationn.
+
+2. For MVC Architecture spring will provide formBasedAuthentication
+
+For these two we will use username and password.

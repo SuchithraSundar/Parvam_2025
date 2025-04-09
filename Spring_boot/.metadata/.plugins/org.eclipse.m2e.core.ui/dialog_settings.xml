@@ -3,6 +3,7 @@
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\SpringSecuritydemo"/>
+			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\Introduction_to_Springboot"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\springboot_framework\SpringSecuritydemo"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\Registration"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\springboot_framework"/>
@@ -18,5 +19,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
