@@ -1,0 +1,10 @@
+.container{
+    color: chocolate;
+    font-size: larger;
+    /* font-weight: lighter; */
+    font-weight: bold;
+    font-style: oblique;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:fantasy;
+    font-variant: small-caps;
+}

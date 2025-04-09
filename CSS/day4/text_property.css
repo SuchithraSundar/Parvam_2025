@@ -1,0 +1,12 @@
+.container{
+    border: 1px solid black;
+    color:brown;
+    text-align: center;
+    /* text-decoration: line-through; */
+    text-decoration-line:underline;
+    text-decoration-color: blue;
+    text-decoration-style: dotted;
+    text-indent: 20px;
+    text-transform:uppercase;
+    text-wrap:nowrap;
+}
