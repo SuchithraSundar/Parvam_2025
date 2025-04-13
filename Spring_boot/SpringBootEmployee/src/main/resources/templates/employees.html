@@ -81,10 +81,12 @@
 	<h1 style="font-size:40px">Employee List</h1>
     <table>
         <tr>
-            <th>id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Id</th>
+            <th>Name</th>
             <th>Email</th>
+            <th>Password</th>
+            <th>Images</th>
+            <th>Documents</th>
             <th>Phone</th>
             <th>Address</th>
             <th>Actions</th>
@@ -92,21 +94,30 @@
         <tbody>
             <tr th:each="employee : ${employees}">
                 <td th:text="${employee.id}"></td>
-                <td th:text="${employee.fname}"></td>
-                <td th:text="${employee.lname}"></td>
+                <td th:text="${employee.name}"></td>
                 <td th:text="${employee.email}"></td>
+                <td th:text="${employee.password}"></td>
+                <td>
+                    	<img alt="image" width="100px" height="100px" th:src="@{'images/'+${employee.imagepath}}">
+                    </td>
+                    <td>
+                    	<a th:href="@{'/documents/' + ${employee.documentpath}}" th:text="${employee.documentpath}" target="_blank"></a>
+                    </td>
                 <td th:text="${employee.phone}"></td>
                 <td th:text="${employee.address}"></td>
                 <td>
-                    <a th:href="@{/edit-employee(id=${employee.id})}" class="edit">edit</a>
+                    <a th:href="@{/edit-employee/{id}(id=${employee.id})}" class="edit">edit</a>
                     <a th:href="@{/delete-employee(id=${employee.id})}" class="delete">delete</a>
 
                 </td>
 
-            </tr>
+            </tr>	
         </tbody>
     </table>
-     <a th:href="@{/add_employee}" style="font-size:20px" class="add">Add Employee</a>
+     <a th:href="@{/add-employee}" style="font-size:20px" class="add">Add Employee</a>
+     <div th:if="${success}">
+        <p th:text="${success}"></p>
+     </div>
 </body>
 
 

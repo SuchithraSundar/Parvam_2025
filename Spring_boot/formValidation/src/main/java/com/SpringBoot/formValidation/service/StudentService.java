@@ -1,6 +1,7 @@
 package com.SpringBoot.formValidation.service;
 
 import java.io.InputStream;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -64,7 +65,7 @@ public class StudentService {
 			System.out.println(e.getMessage());
 		}
 		
-		//to store documnet in public/document directory
+		//to store document in public/document directory
 		
 		try {
 			String docDir = "public/documents/";
