@@ -84,7 +84,7 @@ public class EmpController {
 	}
 
 	// Edit employee page
-	@GetMapping("/edit-employee")
+	@GetMapping("/edit-employee/{id}")
 	public String editEmployee(@RequestParam Long id, Model model) {
 		EmployeeDTO employeeDTO = employeeService.editEmployee(id);
 		Employee employee = employeeRepository.findById(id).get(); // It's better to use `orElseThrow` for better error handling
