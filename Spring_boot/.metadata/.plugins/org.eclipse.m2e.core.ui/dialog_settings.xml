@@ -2,11 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\TemplateInheritence"/>
+			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_GECH\Eclipse workspace java\springSecurityDemo5"/>
+			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_GECH\Eclipse workspace java\springSecurityDemo6"/>
+			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\springSecurityDemo"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\springSecurityDemo3"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\springSecurityDemo2"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\SpringBootEmployee\src\main\resources\templates\employees.html"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\profileForm"/>
-			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\springSecurityDemo"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\SpringSecuritydemo"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\Introduction_to_Springboot"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\springboot_framework\SpringSecuritydemo"/>
@@ -14,9 +17,10 @@
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\springboot_framework"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\RegistrationForm"/>
 			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\formValidation"/>
-			<item value="C:\Users\Suchithra\OneDrive\Desktop\Parvam_internship\Parvam_2025\Spring_boot\FirstWebApp"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="springSecurityDemo8"/>
+			<item value="springSecurityDemo7"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
 			<item value="[artifactId]-[version]"/>
